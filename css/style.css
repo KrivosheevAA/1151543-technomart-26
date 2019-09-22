@@ -6,29 +6,326 @@ a {
 li {
 	list-style: none;
 }
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+.btn-red {
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: #ee3643;
+    color: #fff;
+}
 
 /* Header*/
-.header 
+.header {
+	width: 1200px;
+	height: 310px;
+}
 .header-up {
 	background-color: #293449;
 	color: #fff;
 	display:flex;
+	font-family: "Cuprum-Regular","Arial",sans-serif;
 }
-
-
-
-.header-down
+.header-up a {
+	color: #fff;
+}
 .logo a {
 	display: inline-block;
     width: 165px;
     font-size: 24px;
     line-height: 24px;
-    font-weight: 400;
-    font-style: normal;
     font-family: "Cuprum","Arial",sans-serif;
-    text-transform: uppercase;
     color: #fff;
     background-color: #ee3643;
     box-shadow: 0 5px 0 0 #b52933;
 }
-.header-search
+.logo a:hover {
+	background-color: #ca2c37;
+}
+input[type="search"] {
+    width: 270px;
+    border: none;
+    font-size: 17px;
+    line-height: 18px;
+    color: #fff;
+    background: url(../img/icon-search.svg) no-repeat;
+}
+input[type="search"]:focus {
+	color:#000;  
+	background:#fff;
+}
+input[type="search"]:hover {
+	background:#212a3a;
+}
+.bookmark {
+	background: url(../img/icon-bookmark.svg) no-repeat;
+	font-size: 17px;
+	line-height: 18px;
+}
+.basket {
+	background: url(../img/icon-cart.svg) no-repeat;
+	font-size: 17px;
+	line-height: 18px;
+}
+.order {
+	background-color:#63a63e;
+	font-size: 17px;
+	line-height: 18px;
+}
+.order:hover {
+	background:#5fbb2d;
+}
+.order:active {
+	background:#518534;
+}
+.bookmark:active, .basket:active, .order:active {
+    opacity: 0.6;
+ }
+.bookmark:hover, .basket:hover {
+    background:#212a3a;
+ }
+.header-down {
+	background-color: #f1f5f7;
+	display:flex;
+}
+.header-down h1 {
+ 	font-size: 16px;
+  	font-family: "Cuprum","Arial",sans-serif;
+  	color: rgb(238, 54, 67);
+  	font-style: italic;
+}
+.header-contact {
+	width: 270px;
+	height: 60px;
+	font-family: "Cuprum-Regular","Arial",sans-serif;
+}
+.phone {
+	background: url(../img/icon-phone.svg) no-repeat;
+  	color: rgb(238, 54, 67);
+  	font-size: 21px;
+  	line-height: 1;
+}
+.address {
+	color: rgb(50, 66, 92);
+  	line-height: 1;
+  	text-align: center;
+  	font-size: 14px;
+}
+.login {
+    background-color: #fff;
+    color: #000;
+    font-size: 21px
+    background: url(../img/icon-login.svg) no-repeat;
+}
+.registration {
+	background-color: #fff;
+	font-size: 21px
+    color: #000;
+}
+.login:hover, .registration:hover {
+	color: rgb(238, 54, 67);
+}
+.login:active, .registration:active {
+	opacity: 0.3;
+}
+.user {
+	font-size: 21px;
+	background: url(../img/icon-user.svg) no-repeat;
+	background: url(../img/icon-logout.svg) no-repeat;
+	color: #000;
+}
+.my-order {
+	font-size: 16px;
+	text-decoration: underline;
+	color: #32425c;
+}
+.personal {
+	font-size: 16px;
+	text-decoration: underline;
+	color: #32425c;
+}
+.my-order:hover, .personal:hover {
+	color: #ee3643;
+}
+.my-order:active, .personal:active, .user:active {
+	opacity: 0.3;
+	color: #32425c;
+}
+.nav {
+	background-color: #293449;
+}
+.nav a {
+	color: #fff;
+}
+.nav a:hover {
+	background-color:#293449;  
+	color:#f1f1f3;
+}
+.nav a:active {
+	background-color:#1d2739;  
+	color:#777d88;
+}
+
+/*Блок с картой */
+
+.information {
+	background-color: #fff;
+}
+.information-about h2 {
+	font-size: 30px;
+  	font-family: "Cuprum","Arial",sans-serif;
+  	text-transform: uppercase;
+  	line-height: 1;
+}
+.information-about p {
+	font-size: 13px;
+	line-height: 24px;
+	font-family: "PT Sans-Regular","Arial",sans-serif;
+}
+.information-about li {
+	font-family: "Cuprum-Regular","Arial",sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: 700;
+}
+.information-contact h2 {
+	font-size: 30px;
+  	font-family: "Cuprum","Arial",sans-serif;
+  	text-transform: uppercase;
+  	line-height: 1;
+}
+.information-contact p {
+	font-size: 13px;
+	line-height: 24px;
+	font-family: "PT Sans-Regular","Arial",sans-serif;
+}
+
+/*Footer */
+
+.footer {
+	background-color: #32425c;
+	font-family: "Cuprum-Regular","Arial",sans-serif;
+}
+.footer-up p {
+	font-size: 13px;
+	line-height: 24px;
+	color: #f1f5f7;
+}
+.footer-navigation {
+	font-size: 18px;
+    line-height: 24px;
+}
+.footer-nav-up a {
+	color: #fff;
+}
+.footer-nav-down a {
+	color: #ffd180;
+}
+.footer-nav-up li:hover, .footer-nav-down li:hover {
+	text-decoration: underline;
+}
+.footer-nav-up li:active, .footer-nav-down li:active {
+	opacity: 0.5;
+}
+.footer-down {
+ background-color: #293449;
+}
+.copyright {
+	font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+}
+.vk {
+	background: url(../img/icon-vk.svg) no-repeat;
+}
+.fb {
+	background: url(../img/icon-fb.svg) no-repeat;
+}
+.inst {
+	background: url(../img/icon-insta.svg) no-repeat;
+}
+.mail a {
+	color: #ffd180;
+}
+.mail p {
+	color: #fff;
+}
+.designed p {
+	color: #fff;
+}
+.designed a {
+	color: #ffd180;
+}
+.big-map {
+	display: none;
+}
+.callback {
+	display: none;
+}
+/*Каталог*/
+
+.breadcrumbs a {
+	color: #000;
+	font-size: 13px;
+	line-height: 24px;
+	font-family: "PT Sans-Regular","Arial",sans-serif;
+	text-transform: uppercase;
+}
+.subtitle {
+	background-color: #f1f5f7;
+}
+.manufacturers {
+	color: #000;
+	font-size: 17px;
+	line-height: 30px;
+	font-family: "PT Sans","Arial",sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.power {
+	color: #000;
+	font-size: 17px;
+	line-height: 30px;
+	font-family: "PT Sans","Arial",sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.goods h3 {
+	color: #000;
+	font-size: 18px;
+	line-height: 20px;
+	font-family: "PT Sans","Arial",sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.goods h3 a {
+	color: #000;
+}
+.old-price {
+    color: #999;
+}
+.new-price {
+	color: #fff;
+    background-color: #ee3643;
+}
+.buy {
+	background-color: #63a63e;
+	font-family: "Cuprum-Regular","Arial",sans-serif;
+}
+.in-bookmarks {
+    color: #c1c6ce;
+    font-family: "Cuprum-Regular","Arial",sans-serif;
+}
+.cart {
+	display: none;
+}
