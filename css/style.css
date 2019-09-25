@@ -15,15 +15,10 @@ a {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
-.btn-red {
-    font-size: 14px;
-    text-transform: uppercase;
-    background-color: #ee3643;
-    color: #fff;
-}
 
 /* Header*/
 .header {
+	width: 100%;
 	min-height: 320px;
     margin-bottom: 59px;
 }
@@ -243,20 +238,119 @@ input[type="search"]:hover {
 }
 .nav {
 	background-color: #293449;
+	font-family: "Cuprum","Arial",sans-serif;
 }
 .nav-list {
 	display: flex;
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
 }
 .nav a {
 	color: #fff;
 }
 .nav a:hover {
-	background-color:#293449;  
-	color:#f1f1f3;
+	background-color: #293449;  
+	color: #f1f1f3;
 }
 .nav a:active {
-	background-color:#1d2739;  
-	color:#777d88;
+	background-color: #1d2739;  
+	color: #777d88;
+}
+/*Блок со слайдером*/
+.box {
+	width: 300px;
+    height: 123px;
+    color: #fff;
+}
+.btn {
+    text-align: center;
+    font-size: 14px;
+    border-radius: 3%;
+    text-transform: uppercase;
+    background: rgba(229,229,229,0.1);
+    display: inline-block;
+    color: #fff;
+}
+.btn:hover {
+	 background-color: rgba(204,204,204,0.2);
+}
+.btn:active {
+	background-color: rgba(178,178,178,0.3)
+}
+.promo {
+	font-family: "Cuprum","Arial",sans-serif;
+}
+.material {
+	position: relative;
+	background: #f6b22d url(../img/icon-1.svg) no-repeat 50% 50%;
+}
+.material:after {
+	content: "";
+	width: 60px;
+	height: 59px;
+	display: block;
+	background: url(../img/new-flag.png) no-repeat;
+	position: absolute;
+	top: 100%
+	right: 10px;
+}
+.tools {
+	position: relative;
+	background: #4aafde url(../img/icon-2.svg) no-repeat 50% 50%;
+}
+  
+.equipment {
+	background: #cc79d1 url(../img/icon-3.svg) no-repeat 50% 50%;
+	position: relative;
+}
+.slider {
+		position: relative;
+}
+.btn-red {
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: #ee3643;
+    color: #fff;
+}
+.btn-red:hover {
+    background-color: #ca2c37;
+}
+.btn-red:active {
+	background-color: #ba2732;
+}
+.slide-1 {
+	background: url(../img/slider-1.jpg) no-repeat;
+}                                        
+.slide-2 {
+	background: url(../img/slider-2.jpg) no-repeat;
+}
+.sale {
+	background: #85d179 url(../img/icon-4.svg) no-repeat 50% 50%;
+	position: relative;
+}
+.delivery {
+	background: #f6b22d url(../img/icon-5.svg) no-repeat 50% 50%;
+	position: relative;
+}
+.popular-goods {
+	background: #f7f3ec;
+	font-family: "Cuprum","Arial",sans-serif;
+}
+.goods {
+    display: flex;
+    font-family: "PT Sans","Arial",sans-serif;
+    font-weight: bold;
+}
+.popular-manufacturers {
+	background: #f7f3ec;
+	font-family: "Cuprum","Arial",sans-serif;
+}
+.firms {
+	display: flex;
+}
+.box-service {
+	background-color: #f2f6f8;
 }
 
 /*Блок с картой */
@@ -308,6 +402,9 @@ input[type="search"]:hover {
 	font-size: 18px;
     line-height: 24px;
 }
+.footer-navigation ul {
+	    list-style: none;
+}
 .footer-nav-up a {
 	color: #fff;
 }
@@ -328,6 +425,9 @@ input[type="search"]:hover {
     line-height: 18px;
     color: #fff;
 }
+.socials ul {
+	list-style: none;
+}
 .vk {
 	background: url(../img/icon-vk.svg) no-repeat;
 	display: block;
@@ -336,9 +436,15 @@ input[type="search"]:hover {
 }
 .fb {
 	background: url(../img/icon-fb.svg) no-repeat;
+	display: block;
+	width: 20px;
+	height: 20px;
 }
 .inst {
 	background: url(../img/icon-insta.svg) no-repeat;
+	display: block;
+	width: 20px;
+	height: 20px;
 }
 .mail a {
 	color: #ffd180;
@@ -366,6 +472,14 @@ input[type="search"]:hover {
 	line-height: 24px;
 	font-family: "PT Sans","Arial",sans-serif;
 	text-transform: uppercase;
+	display: flex;
+
+}
+.breadcrumbs li {
+	list-style: none;
+}
+.breadcrumbs li:first-child {
+	background: url(../img/icon-home.svg) no-repeat;
 }
 .subtitle {
 	background-color: #f1f5f7;
@@ -397,6 +511,9 @@ input[type="search"]:hover {
 .goods h3 a {
 	color: #000;
 }
+.goods ul {
+	list-style: none;
+}
 .old-price {
     color: #999;
 }
@@ -411,6 +528,9 @@ input[type="search"]:hover {
 .in-bookmarks {
     color: #c1c6ce;
     font-family: "Cuprum","Arial",sans-serif;
+}
+.pagination li {
+	list-style: none;
 }
 .cart {
 	display: none;
