@@ -18,7 +18,6 @@ a {
 
 /* Header*/
 .header {
-	width: 100%;
 	min-height: 320px;
     margin-bottom: 59px;
 }
@@ -26,13 +25,17 @@ a {
 	width: 940px;
     margin: 0 auto;
     padding: 0 10px;
+}    
+.fleks {        
+    display:flex;
+	justify-content: space-between;
 }
 .header-up {
 	background-color: #293449;
 	color: #fff;
-	display:flex;
 	font-family: "Cuprum","Arial",sans-serif;
 	font-weight: 400;
+	min-height: 42px;
 }
 .header-up a {
 	color: #fff;
@@ -131,7 +134,8 @@ input[type="search"]:hover {
 }
 .header-center {
 	background-color: #f1f5f7;
-	display:flex;
+	min-height: 200px;
+	padding: 47px 0 60px 0;
 }
 .header-center h1 {
  	font-size: 16px;
@@ -237,14 +241,22 @@ input[type="search"]:hover {
 	color: #32425c;
 }
 .nav {
-	background-color: #293449;
-	font-family: "Cuprum","Arial",sans-serif;
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #32425c;
+    font-size: 17px;
+    margin-top: 38px;
+    padding: 0 23px;
+    border-bottom: 5px solid #293449;
+    font-family: "Cuprum","Arial",sans-serif;
 }
 .nav-list {
-	display: flex;
 	list-style: none;
 	padding: 0px;
 	margin: 0px;
+	display: flex
 }
 .nav a {
 	color: #fff;
@@ -280,6 +292,8 @@ input[type="search"]:hover {
 }
 .promo {
 	font-family: "Cuprum","Arial",sans-serif;
+	flex-wrap: wrap;
+    margin: 59px 0 31px 0;
 }
 .material {
 	position: relative;
@@ -338,9 +352,23 @@ input[type="search"]:hover {
 	font-family: "Cuprum","Arial",sans-serif;
 }
 .goods {
-    display: flex;
     font-family: "PT Sans","Arial",sans-serif;
     font-weight: bold;
+}
+.goods-list {
+    align-items: center;
+    width: 218px;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.goods-list-item {
+	position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .popular-manufacturers {
 	background: #f7f3ec;
