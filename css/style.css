@@ -3,6 +3,10 @@
 a { 
 	text-decoration: none;
 }
+img {
+	width: 100%;
+	height: auto;
+}
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -26,7 +30,7 @@ a {
     margin: 0 auto;
     padding: 0 10px;
 }    
-.fix {        
+.flex {        
     display:flex;
 	justify-content: space-between;
 }
@@ -137,6 +141,10 @@ input[type="search"]:hover {
 	min-height: 200px;
 	padding: 47px 0 60px 0;
 }
+.col {
+	width: 280px;
+	margin: auto;
+}
 .header-center h1 {
  	font-size: 16px;
   	font-family: "Cuprum","Arial",sans-serif;
@@ -148,7 +156,7 @@ input[type="search"]:hover {
 }
 .header-contact {
 	width: 270px;
-	height: 60px;
+	height: 65px;
 	font-family: "Cuprum","Arial",sans-serif;
 }
 .phone {
@@ -177,8 +185,17 @@ input[type="search"]:hover {
   	text-align: center;
   	font-size: 14px;
 }
+.profile {
+	display: flex;
+    text-align: center;
+    width: 300px;
+    height: 45px;
+    font-size: 21px;
+    line-height: 18px;
+}
 .login {
     background-color: #fff;
+   	padding: 14px 26px 0 45px;
     color: #000;
     font-size: 21px;
     position: relative;
@@ -197,6 +214,9 @@ input[type="search"]:hover {
 	background-color: #fff;
 	font-size: 21px
     color: #000;
+    width: 150px;
+    padding-top: 14px;
+    margin-left: 10px;
 }
 .login:hover, .registration:hover {
 	color: rgb(238, 54, 67);
@@ -379,6 +399,7 @@ input[type="search"]:hover {
     text-align: center;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .goods-list-item {
 	border: 1px solid #e5e5e5;
