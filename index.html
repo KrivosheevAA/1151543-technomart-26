@@ -11,14 +11,24 @@
 <header class="header">
 	   <div class="header-up">
             <div class="container flex">
+              <div class="col">
 				          <a class="logo">ТЕХНОМАРТ</a>
+              </div>
+              <div class="col">    
 	             <form class="form-search" action="#" method="post">
                     <label class="form-search-label" for="search"><input type="search" name="search" id="search" placeholder="Поиск:">
                         <svg class="form-search-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg></label>
               </form>
+              </div>
+              <div class="col">  
                       <a href="#" class="bookmark">Закладки: 0</a>
+               </div>
+               <div class="col">  
                       <a href="#" class="basket">Корзина: 0</a>
+               </div>       
+                <div class="col">        
                       <a href="#" class="order">Оформить заказ</a>
+                </div>      
 	         </div>
     </div>
       <div class="header-center">
@@ -56,104 +66,118 @@
 </header>
 <main>
       <div class="container">
-        <div class="promo flex">
-             <div class="box material">
-                  <h3>Материалы</h3>
-                  <a href="#" class="btn">на любой вкус</a>                    
-            </div>
+        <div class="promo">
+          <div class="flex">
+                    <div class="box material new-flag">
+                        <h3>Материалы</h3>
+                        <a href="#" class="btn">на любой вкус</a>                    
+                    </div>
                     <div class="box tools">
                         <h3>Инструмент</h3>
                         <a href="#" class="btn">на все случаи</a>
                     </div>
-                          <div class="box equipment">
-                              <h3>Техника</h3>
-                              <a href="#" class="btn">для стройки</a>
-                          </div>
-                              <div class="slider">
-                                    <div class="slide-1">
+                    <div class="box equipment">
+                        <h3>Техника</h3>
+                        <a href="#" class="btn">для стройки</a>
+                    </div>
+          </div> 
+          <div class="flex">             
+                      <div class="slider">
+                              <div class="slide-1">
                                         <h2>Перфораторы</h2>
                                         <p>Настоящие мужские игрушки</p>
                                         <a href="#" class="btn-red">Открыть каталог</a>
-                                    </div>  
-                                    <div class="slide-2">
+                             </div>  
+                              <div class="slide-2">
                                         <h2>Дрели</h2>
                                         <p>Соседям на радость!</p>
                                         <a href="#" class="btn-red">Открыть каталог</a>
-                                    </div>
                               </div>
-                          <div class="box sale">
+                      </div>
+                      <div>
+                      <div class="box sale">
                             <h3>Скидки 50%</h3>
                             <a href="#" class="btn">На 350 товаров</a>
-                          </div>
-                    <div class="box delivery">
-                        <h3>Доставка</h3>
-                        <a href="#" class="btn">Бесплатно</a>           
+                      </div>
+                      <div class="box delivery">
+                            <h3>Доставка</h3>
+                            <a href="#" class="btn">Бесплатно</a>           
+                      </div>
                     </div>
+           </div>          
           </div>
         </div>
-             <div class="popular-goods container flex">
-                        <h2>Популярные товары:</h2>
+          <section class="popular-section">
+              <div class="container">
+                  <div class="section-head">
+                        <h2 class="section-title">Популярные товары:</h2>
                         <a href="#" class="btn-red">все популярные товары</a>
-              </div>
+                  </div>
                       <div class="goods">
-                        <div class="container flex">
-                                <ul class="goods-list">
-                                      <li class="goods-list-item">
+                                <ul class="popular-goods goods-list">
+                                      <li class="goods-item">
                                           <a href="#"><img src="img/bosch-bfg-9000.jpg" alt="Перфоратор bosh bfg 9000" width="218" height="170"></a>
                                           <h3><a href="#">Перфоратор BOSH BFG 9000</a></h3>
                                           <del class="price-old">32500 Р.</del>
                                           <span class="price-new">25500 Р.</span> 
-                                                  <span class="goods-popap">
+                                                  <div class="goods-item-wrapper">
                                                     <a href="#">купить</a>
                                                     <a href="#">в закладки</a>
-                                                  </span>
+                                                  </div>
                                       </li>
-                                      <li class="goods-list-item">
+                                      <li class="goods-item">
                                           <a href="#"><img src="img/bosch-bfg-3000.jpg" alt="Перфоратор bosh bfg 3000" width="218" height="170"></a>
                                           <h3><a href="#">Перфоратор BOSH BFG 3000</a></h3>
                                           <del class="price-old">22500 Р.</del>
                                           <span class="price-new">15500 Р.</span>
-                                                  <span class="goods-popap">
+                                                  <div class="goods-item-wrapper">
                                                     <a href="#">купить</a>
                                                     <a href="#">в закладки</a>
-                                                  </span>
+                                                 </div>
                                       </li>
-                                      <li class="goods-list-item">
+                                      <li class="goods-item">
                                           <a href="#"><img src="img/bosch-bfg-6000.jpg" alt="Перфоратор bosh bfg 6000" width="218" height="170"></a>
                                           <h3><a href="#">Перфоратор BOSH BFG 6000</a></h3>
                                           <del class="price-old">30500 Р.</del>
                                           <span class="price-new">25500 Р.</span>
-                                                  <span class="goods-popap">
+                                                  <div class="goods-item-wrapper">
                                                     <a href="#">купить</a>
                                                     <a href="#">в закладки</a>
-                                                  </span>
+                                                  </div>
                                       </li>
-                                      <li class="goods-list-item">
+                                      <li class="goods-item">
                                           <a href="#"><img src="img/bosch-bfg-2000.jpg" alt="Перфоратор bosh bfg 2000" width="218" height="170"></a>
                                           <h3><a href="#">Перфоратор BOSH BFG 2000</a></h3>
-                                          <span class="price-new">12500 Р.</span>
-                                                  <span class="goods-popap">
+                                          <div class="no-discount">
+                                          <span class=" price-new">12500 Р.</span>
+                                                  <div class="goods-item-wrapper">
                                                     <a href="#">купить</a>
                                                     <a href="#">в закладки</a>
-                                                  </span> 
+                                                  </div>
+                                          </div>        
                                       </li>
                                   </ul>
-                          </div>
-                        </div>
-                <div class="popular-manufacturers container flex"> 
-                      <h2>Популярные производители:</h2>
-                      <a href="#" class="btn-red">Все производители</a>
+                      </div>
                 </div>
-      <div class="firms container flex">
-          <a href="#" class="firms-brand"><img src="img/bosch.jpg" alt="bosch" width="218" height="143"></a>
-          <a href="#"class="firms-brand"><img src="img/makita.jpg" alt="makita" width="218" height="143"></a>
-          <a href="#"class="firms-brand"><img src="img/dewalt.jpg" alt="dewalt" width="218" height="143"></a>
-          <a href="#"class="firms-brand"><img src="img/interskol.jpg" alt="interskol" width="216" height="143"></a>
-          <a href="#"class="firms-brand"><img src="img/hitachi.jpg" alt="hitachi" width="218" height="143"></a>
-          <a href="#"class="firms-brand"><img src="img/lg.jpg" alt="lg" width="218" height="143"></a>
-          <a href="#"class="firms-brand"><img src="img/aeg.jpg" alt="aeg" width="218" height="143"></a>
-          <a href="#"class="firms-brand"><img src="img/metabo.jpg" alt="metabo" width="218" height="143"></a>
-      </div>
+            </section>
+                <section class="popular-manufacturers">
+                  <div class="container">
+                    <div class="section-head">
+                      <h2 class="section-title">Популярные производители:</h2>
+                      <a href="#" class="btn-red">Все производители</a>
+                    </div>
+              <div class="firms">
+                  <a href="#" class="firms-brand"><img src="img/bosch.jpg" alt="bosch" width="218" height="143"></a>
+                  <a href="#"class="firms-brand"><img src="img/makita.jpg" alt="makita" width="218" height="143"></a>
+                  <a href="#"class="firms-brand"><img src="img/dewalt.jpg" alt="dewalt" width="218" height="143"></a>
+                  <a href="#"class="firms-brand"><img src="img/interskol.jpg" alt="interskol" width="216" height="143"></a>
+                  <a href="#"class="firms-brand"><img src="img/hitachi.jpg" alt="hitachi" width="218" height="143"></a>
+                  <a href="#"class="firms-brand"><img src="img/lg.jpg" alt="lg" width="218" height="143"></a>
+                  <a href="#"class="firms-brand"><img src="img/aeg.jpg" alt="aeg" width="218" height="143"></a>
+                  <a href="#"class="firms-brand"><img src="img/metabo.jpg" alt="metabo" width="218" height="143"></a>
+            </div>
+          </div>
+        </section>
         <div class="container">
               <section class="box-service">
                               <h2>Сервисы</h2>
@@ -204,9 +228,9 @@
 	           </div>
 	                   <div class="information-contact">
 		                    <h2>Контакты</h2>
-		                        <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
+		                        <p>Вы можете забрать товар сами, заехав в наш офис:</p>
 		                          <a><img src="img/map.png" alt="map" width="300" height="158"></a>
-                                  <button type="button" class="btn-red">Заблудились? напишите нам!</button>
+                                  <a href="#" class="btn-red">Заблудились? напишите нам!</a>
 	                   </div>            
         </div>
 </main>
