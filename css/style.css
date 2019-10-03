@@ -72,12 +72,15 @@ input[type="search"] {
     background: #293449;
     padding: 12px 0 12px 50px;
 }
+input::placeholder {
+	color: #fff;
+}
 .form-search-label {
  	position: relative;
 }
 .form-search-icon {
 	position: absolute;
-	fill: rgb(255, 255, 255, 0.6);
+	fill: rgb(255, 255, 255, 0.3);
 	left: 18px;
 	top: 0px;
 }
@@ -107,7 +110,7 @@ input[type="search"]:hover {
 	position: absolute;
 	top: calc(50% - 16px / 2);
 	left: 20px;
-	color: rgb(255, 255, 255, 0.6);
+	opacity: 0.3;
 }
 .basket {
 	font-size: 17px;
@@ -126,6 +129,7 @@ input[type="search"]:hover {
 	position: absolute;
 	top: calc(50% - 15px / 2);
 	left: 20px;
+	opacity: 0.3;
 }
 .order {
 	width: 150px;
@@ -148,9 +152,6 @@ input[type="search"]:hover {
 .bookmark:hover, .basket:hover {
     background:#212a3a;
  }
-.bookmark:hover:before {
-	opacity: 0.3;
-}
 .header-center {
 	background-color: #f1f5f7;
 	min-height: 200px;
@@ -359,15 +360,14 @@ input[type="search"]:hover {
 	background: #f6b22d url(../img/icon-1.svg) no-repeat 80% 50%;
 	text-align: left;
 }
-.material:after {
+.new-flag:before {
 	content: "";
+	position: absolute;
 	width: 60px;
 	height: 59px;
-	display: block;
+	display:block;
 	background: url(../img/new-flag.png) no-repeat;
-	position: absolute;
-	top: 100%
-	right: 10px;
+	left: 239px;
 }
 .tools {
 	position: relative;
@@ -377,8 +377,50 @@ input[type="search"]:hover {
 	background: #cc79d1 url(../img/icon-3.svg) no-repeat 80% 50%;
 	position: relative;
 }
-.slider {
-		position: relative;
+.sliders {
+	position: relative;
+}
+.sliders input[type="radio"] {
+	display: none;
+}
+.slide-control {
+	position: absolute;
+    bottom: 55px;
+    left: 48%;
+    display: flex;
+    justify-content: space-between;
+    width: 30px;
+    height: 10px;
+}
+.sliders-slide-1:checked ~ .switching .slide-1 {
+	display: block;
+	background: url(../img/slider-1.jpg) no-repeat;
+}
+.sliders-slide-2:checked ~ .switching .slide-2 {
+	display: block;
+	background: url(../img/slider-2.jpg) no-repeat;
+}
+.slide {
+	display: none;
+	width: 620px;
+    height: 265px;
+}
+.slide h2 {
+    font-size: 36px;
+    line-height: 30px;
+    margin: 0;
+    padding: 26px 0 0 24px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.slide p {
+	margin-top: 4px;
+    font: 18px/24px "PT Sans","Arial",sans-serif;
+    margin: 25px 0px 10px 25px;
+    color: #fff;
+}
+.slide .btn-red {
+	margin: 122px 0 0 25px;
 }
 .btn-red {
     font-size: 16px;
@@ -399,15 +441,6 @@ input[type="search"]:hover {
 }
 .btn-red:active {
 	background-color: #ba2732;
-}
-.slider {
-	position: relative;
-}
-.slide-1 {
-	background: url(../img/slider-1.jpg) no-repeat;
-}                                        
-.slide-2 {
-	background: url(../img/slider-2.jpg) no-repeat;
 }
 .sale {
 	background: #85d179 url(../img/icon-4.svg) no-repeat 80% 50%;
@@ -486,14 +519,6 @@ input[type="search"]:hover {
     text-align: center;
     flex-grow: 1;
 }
-.new-flag:before {
-	content: "";
-	position: absolute;
-	width: 60px;
-	height: 59px;
-	display:block;
-	background: url(../img/new-flag.png) no-repeat 50% 50%;
-}
 .price-old {
 	display: flex;
 	justify-content: center;
@@ -568,7 +593,21 @@ input[type="search"]:hover {
 .box-service {
 	background-color: #f2f6f8;
 }
-
+.section-service {
+	display: none;
+}
+.service-delivery:checked ~ .box-service-container .section-delivery {
+	display: block;
+}
+.service-guarantee:checked ~ .box-service-container .section-guarantee {
+	display: block;
+}
+.service-credit:checked ~ .box-service-container .section-credit {
+	display: block;
+}
+.box-service input[type="radio"] {
+	display: none;
+}
 /*Блок с картой */
 
 .information {
@@ -618,7 +657,7 @@ input[type="search"]:hover {
 	display: flex;
 	flex-direction: column;
 	font-size: 18px;
-    margin: 33px 0 50px 3px;
+    margin: 0px 0 50px 3px;
 }
 .left-contact a {
 	color: #fff;
@@ -654,6 +693,7 @@ input[type="search"]:hover {
 }
 .footer-nav-up li:active, .footer-nav-down li:active {
 	opacity: 0.5;
+	text-decoration:none;
 }
 .footer-down {
  	background-color: #293449;
@@ -718,6 +758,12 @@ input[type="search"]:hover {
 }
 .designed a {
 	color: #ffd180;
+}
+.mail a:hover, .designed a:hover {
+	text-decoration: underline;
+}
+.mail a:active, .designed a:active {
+	color:#ee3643;
 }
 .big-map {
 	display: none;
