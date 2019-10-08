@@ -9,46 +9,30 @@
       </head>
 <body>
 <header class="header">
-	   <div class="header-up">
+	  <div class="header-up">
         <div class="container flex">
-              <div class="col">
 				          <a class="logo">ТЕХНОМАРТ</a>
-              </div>
-                <div class="col">    
 	                   <form class="form-search" action="#" method="post">
                         <label class="form-search-label" for="search"><input type="search" name="search" id="search" placeholder="Поиск:">
                         <svg class="form-search-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg></label>
                     </form>
-                </div>
-                <div class="col">  
                       <a href="#" class="bookmark">Закладки: 0</a>
-                </div>
-                <div class="col">  
-                      <a href="#" class="basket">Корзина: 0</a>
-                </div>       
-                <div class="col">        
-                      <a href="#" class="order">Оформить заказ</a>
-                </div>      
+                      <a href="#" class="basket">Корзина: 0</a>    
+                      <a href="#" class="order">Оформить заказ</a>   
 	       </div>
     </div>
     <div class="header-center">
         <div class="container">
               <div class="flex">
-                    <div class="col">
-	                     <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-                    </div> 
-                    <div class="col">   
+	                     <h1>Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</h1> 
                       <address class="header-contact">
                           <p class="phone"><a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
                           <p class="address">г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
                       </address>
-                    </div>
-                    <div class="col">
                           <div class="profile">    
                             <a href="#" class="login">Войти</a>
                             <a href="#" class="registration">Регистрация</a>
                           </div> 
-                    </div>
               </div>                   
                   <nav class="nav">
 	 	                     <ul class="nav-list">
@@ -67,7 +51,7 @@
 <main>
     <div class="container">
         <div class="promo">
-            <div class="flex">
+                <div class="promo-up flex">
                     <div class="box material new-flag">
                         <h3>Материалы</h3>
                         <a href="#" class="btn">на любой вкус</a>                    
@@ -80,15 +64,11 @@
                         <h3>Техника</h3>
                         <a href="#" class="btn">для стройки</a>
                     </div>
-            </div> 
+                </div>    
             <div class="flex">
                 <div class="sliders">
-                          <input class="sliders-slide-1" type="radio" name="slider" id="slide-1" checked>
-                          <input class="sliders-slide-2" type="radio" name="slider" id="slide-2">  
-                              <div class="slide-control">
-                                 <label for="slide-1"></label>
-                                 <label for="slide-2"></label>
-                              </div> 
+                          <input class="sliders-slide-1 visually-hidden" type="radio" name="slider" id="slide-1" checked>
+                          <input class="sliders-slide-2 visually-hidden" type="radio" name="slider" id="slide-2">  
                         <div class="switching">  
                               <section class="slide slide-1">
                                         <h2>Перфораторы</h2>
@@ -100,9 +80,15 @@
                                         <p>Соседям на радость!</p>
                                         <a href="#" class="btn-red">Открыть каталог</a>
                               </section>
-                         </div>      
+                         </div> 
+                         <div class="slide-control">
+                                 <label for="slide-1"><span class="visually-hidden">Слайд 1</span></label>
+                                 <label for="slide-2"><span class="visually-hidden">Слайд 2</span></label>
+                        </div>
+                       <label class="arrow-left" for="slide-1"></label>
+                       <label class="arrow-right" for="slide-2"></label>    
                 </div>
-                    <div>
+                    <div class="promo-right">
                             <div class="box sale">
                                   <h3>Скидки 50%</h3>
                                   <a href="#" class="btn">На 350 товаров</a>
@@ -186,16 +172,16 @@
                 </div>
             </section>
             <section class="box-service">
-                        <input class="service-delivery" type="radio" name="service" id="delivery" checked="checked">
-                        <input class="service-guarantee" type="radio" name="service" id="guarantee">
-                        <input class="service-credit" type="radio" name="service" id="credit">
+                        <input class="service-delivery visually-hidden" type="radio" name="service" id="delivery" checked="checked">
+                        <input class="service-guarantee visually-hidden" type="radio" name="service" id="guarantee">
+                        <input class="service-credit visually-hidden" type="radio" name="service" id="credit">
                 <div class="container box-service-container">
                                 <div>
                                     <h2>Сервисы</h2>
                                     <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
                                     Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными</p>
                                 </div>
-                      <div>
+                      <div class="box-service-wrapper">
                                 <ul class="box-service-list">
                                     <li><label class="delivery-tab" for="delivery">Доставка</label></li>
                                     <li><label class="guarantee-tab" for="guarantee">Гарантия</label></li>
