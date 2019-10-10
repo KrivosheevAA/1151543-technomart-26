@@ -201,6 +201,7 @@ input[type="search"]:hover + .form-search-icon {
   	line-height: 1;
   	text-align: center;
   	font-size: 14px;
+  	font-style: normal;
 }
 .profile {
 	display: flex;
@@ -242,9 +243,7 @@ input[type="search"]:hover + .form-search-icon {
 	opacity: 0.3;
 }
 .accaunt {
-	display: flex;
-	flex-wrap: wrap;
-	margin-top: 0px;
+	margin-top: 14px;
 }
 .user-info {
 	margin-top: -12px;
@@ -262,13 +261,11 @@ input[type="search"]:hover + .form-search-icon {
     margin-bottom: 5px;
     line-height: 18px;
     color: #000;
+    font-family: "Cuprum","Arial",sans-serif;
 }
-.user:before {
-	content: "";
+.user-icon {
 	width: 20px;
 	height: 18px;
-	display:block;
-	background: url(../img/icon-user.svg) no-repeat;
 	position: absolute;
 	top: calc(50% - 18px / 2);
 	left: 10px;
@@ -276,15 +273,21 @@ input[type="search"]:hover + .form-search-icon {
 .exit {
 	position: relative;
 }
-.exit:after {
-	content: "";
+.icon-logout {
 	position: absolute;
-	background: url(../img/icon-logout.svg) no-repeat;
 	width: 20px;
 	height: 17px;
-	display:block;
 	top: -34px;
 	left: 270px;
+}
+.user-icon, .icon-logout {
+	fill: #c5c5c5;
+}
+.user-icon:hover, .icon-logout:hover {
+	fill: #32425c;
+}
+.user:active, .exit:active {
+	opacity: 0.3;
 }
 .my-order {
 	font-size: 16px;
@@ -930,15 +933,16 @@ input[type="search"]:hover + .form-search-icon {
 	font-family: "Cuprum","Arial",sans-serif;
 }
 .footer-up p {
-	font-size: 13px;
+	font-size: 18px;
 	line-height: 24px;
 	color: #f1f5f7;
+	margin: 33px 0 50px 3px;
 }
 .left-contact {
 	display: flex;
 	flex-direction: column;
 	font-size: 18px;
-    margin: 0px 0 50px 3px;
+    margin: 0px 0 21px 3px;
 }
 .left-contact a {
 	color: #fff;
@@ -946,9 +950,15 @@ input[type="search"]:hover + .form-search-icon {
 .footer-navigation {
 	font-size: 18px;
     line-height: 24px;
+    width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0px 60px 0px;
 }
 .footer-navigation ul {
 	list-style: none;
+	padding: 0px;
+	margin: 0px;
 }
 .footer-nav-up a {
 	color: #fff;
@@ -956,7 +966,6 @@ input[type="search"]:hover + .form-search-icon {
 }
 .footer-nav-up-list {
 	display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 .footer-nav-down a {
@@ -965,7 +974,6 @@ input[type="search"]:hover + .form-search-icon {
 }
 .footer-nav-down-list {
 	display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 .footer-nav-up li:hover, .footer-nav-down li:hover {
@@ -985,15 +993,17 @@ input[type="search"]:hover + .form-search-icon {
 	font-size: 16px;
     line-height: 18px;
     color: #fff;
+/*    padding: 37px 0 0 2px;*/
 }
 .socials {
-	width: 130px;
-    margin: 0 120px 0 161px;
+	width: 80px;
+    margin: 20px 0 0 175px;
 }
 .socials-list {
 	list-style: none;
 	display: flex;
-	margin: 18px 0px 0 -110px;
+	padding: 0px;
+	margin: 0px;
 }
 .vk {
 	background: #212a3a url(../img/icon-vk.svg) no-repeat;
@@ -1022,8 +1032,13 @@ input[type="search"]:hover + .form-search-icon {
 .vk:hover, .fb:hover, .inst:hover {
 	background-color: #ee3643;
 }
+.communication {
+	    margin: 15px 0 0 118px;
+}
 .mail {
 	line-height: 0px;
+	    width: 140px;
+    margin-right: 48px;
 } 
 .mail a {
 	color: #ffd180;
@@ -1033,6 +1048,7 @@ input[type="search"]:hover + .form-search-icon {
 }
 .designed {
 	line-height: 0px;
+	    width: 100px;
 }
 .designed p {
 	color: #fff;
