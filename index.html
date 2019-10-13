@@ -264,7 +264,7 @@
     <div class="footer-down">
         <div class="container flex">
                 <div class="copyright">
-                        <p>© 2010-2019 Компания &laquo;Техномарт&raquo;<br>Все права защищены</p>
+                        <p>© 2010-2019 Компания &laquo;Техномарт&raquo; Все права защищены</p>
                 </div> 
                       <div class="socials">
                                 <ul class="socials-list">
@@ -286,22 +286,34 @@
         </div> 
     </div>
 </footer>
-              <section class="big-map">
-                  <h2>Поп ап большая карта</h2>
-                  <img src="img/big-map.png" alt="big-map" width="970" height="476">
-                  <button type="button"></button>
-              </section>
-      <section class="callback">
-         <h2 class="visually-hidden">Обратная связь</h2>  
-              <form action="#" method="post">
-                  <button type="button"></button>
-                  <label for="imya">Ваше имя:</label>
-                  <input type="text" name="imya" id="imya" placeholder="Имя Фамилия">
-                  <label for="e-mail">Ваш e-mail:</label>
-                  <input type="text" name="e-mail" id="e-mail" placeholder="email@example.com">
-                  <label for="tekst-pisma">Текст письма:</label>
-                  <textarea id="tekst-pisma" name="tekst-pisma" placeholder="В свободной форме"></textarea>
-                  <button type="submit">Отправить</button>
+      <section class="big-map show-map">
+           <h2 class="visually-hidden">Как до нас добраться</h2>
+              <img src="img/big-map.png" alt="big-map" width="970" height="476" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+                    <div class="close-map">
+                          <span class="visually-hidden">Закрыть</span>
+                    </div>
+      </section>
+      <section class="callback content-show">
+              <h2 class="visually-hidden">Обратная связь</h2>
+                      <div class="close">
+                          <span class="visually-hidden">Закрыть</span>
+                      </div>  
+              <form class="callback-form" action="#" method="post">
+                     <div class="flex">
+                            <div class="name">
+                                  <label for="fio">Ваше имя:</label>
+                                  <input type="text" name="fio" id="fio" placeholder="Имя Фамилия" required>
+                            </div>
+                            <div class="e-mail">
+                                  <label for="e-mail">Ваш e-mail:</label>
+                                  <input type="text" name="e-mail" id="e-mail" placeholder="email@example.com" required>
+                            </div>
+                      </div>  
+                          <label for="text">Текст письма:</label>
+                          <textarea class="letter" id="text" name="text" placeholder="В свободной форме" required></textarea>
+                      <div class="send">
+                            <button class="send-btn" type="submit">Отправить</button>
+                      </div>  
               </form>  
       </section>
 </body>
