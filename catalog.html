@@ -69,7 +69,7 @@
         </div>
         <div class="container-goods">      
             <div class="container flex">            
-	                     <section>
+	                     <section class="left-aside">
 		                        <h2 class="visually-hidden">Фильтр товаров</h2>
 		                            <form action="#" method="post">
 					                               <div class="filter">фильтр:</div>
@@ -78,39 +78,56 @@
                                                       <div class="range-top">
                                                           <div class="range-progress">
                                                               <div class="range-bar">
-                				                                            <button type="button"></button>
-                                                                    <button type="button"></button>
+                				                                            <div class="button-circle-left"></div>
+                                                                    <div class="button-circle-right"></div>
                                                               </div>
                                                           </div>
                                                       </div>
                                                         <div class="range-bottom">
-                                                            <p>
                 				                                        <label for="min"></label>
-                                                                <input type="text" id="min" name="min" value="0">
-                                                            </p>
+                                                                <input class="price-min" type="text" id="min" name="min" value="0">
                                                                 <span>&ndash;</span>
-                                                            <p>
                 				                                        <label for="max"></label>
-                                                                <input type="text" id="max" name="max" value="30000">
-                                                            </p>            
+                                                                <input class="price-max" type="text" id="max" name="max" value="30000">        
             			                                     </div>
                                                 </div>
                                               <div class="manufacturers">  
 					                                         <h3>Производители:</h3>
                                                     <div class="manufacturers-filter">
-                                                         <label for="bosch"><input type="checkbox" id="bosch" name="bosch" checked>Bosch</label>
-							                                           <label for="interskol"><input type="checkbox" id="interskol" name="interskol">Интерскол</label>
-                			                                   <label for="makita"><input type="checkbox" id="makita" name="makita" checked>Makita</label>
-                			                                   <label for="dewalt"><input type="checkbox" id="dewalt" name="dewalt">Dewalt</label>
-                			                                   <label for="hitachi"><input type="checkbox" id="hitachi" name="hitachi">Hitachi</label>
+                                                          <p>
+                                                              <input type="checkbox" id="bosch" name="bosch" class="visually-hidden form-checkbox" checked>
+                                                              <label class="form-label" for="bosch">Bosch</label>
+                                                          </p>
+                                                          <p>
+                                                              <input type="checkbox" id="interskol" name="interskol" class="visually-hidden form-checkbox">
+                                                              <label class="form-label" for="interskol">Интерскол</label>
+                                                          </p>   
+							                                            <p>
+                                                              <input type="checkbox" id="makita" name="makita" class="visually-hidden form-checkbox" checked>
+                                                              <label class="form-label" for="makita">Makita</label>
+                                                          </p> 
+                                                          <p>
+                                                              <input type="checkbox" id="dewalt" name="dewalt" class="visually-hidden form-checkbox">
+                                                              <label class="form-label" for="dewalt">Dewalt</label>
+                                                          </p>
+                                                          <p>
+                                                              <input type="checkbox" id="hitachi" name="hitachi" class="visually-hidden form-checkbox">
+                                                              <label class="form-label" for="hitachi">Hitachi</label>
+                                                          </p>    
                                                     </div>
      					                                </div>
                                               <div class="power">  
      				                                       <h3>Питание:</h3>
-                		                                  <div class="power-filter">
-                  			                                   <label for="akkum"><input type="radio" id="akkum" name="akkum" checked>Аккумуляторные</label>
-                  			                                   <label for="set"><input type="radio" id="set" name="set">Сетевые</label>
-                		                                  </div> 
+                		                                    <div class="power-filter">
+                                                              <p>
+                                                                  <input type="radio" id="power-filter-1" name="power-filter-1" class="visually-hidden form-checkbox" checked >
+                                                                  <label class="power-label" for="power-filter-1">Аккумуляторные</label>
+                                                              </p>
+                                                              <p>
+                                                                  <input type="radio" id="power-filter-2" name="power-filter-2" class="visually-hidden form-checkbox">
+                                                                  <label class="power-label" for="power-filter-2">Сетевые</label>
+                                                              </p>  
+                		                                    </div> 
                                               </div>        
     		                                  <button type="submit">Показать</button>
 		                            </form>
