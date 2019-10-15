@@ -1520,6 +1520,7 @@ input[type="search"]:hover + .form-search-icon {
     font-size: 18px;
     line-height: 18px;
     z-index: 1000;
+    display: none;
 }
 .content-show {
 	display: none;
@@ -1594,7 +1595,11 @@ input[type="search"]:hover + .form-search-icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 6px -79px 0 -80px;
+    position: absolute;
+    /*margin: 6px -79px 0 -80px;*/
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 .send-btn {
 	height: 38px;
