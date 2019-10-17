@@ -66,7 +66,7 @@ input[type="search"] {
     background: #293449;
     padding: 12px 0 12px 50px;
 }
-input::placeholder {
+input[type="search"]::placeholder {
 	color: #fff;
 }
 .form-search-label {
@@ -78,16 +78,15 @@ input::placeholder {
 	left: 18px;
 	top: 0px;
 }
+input[type="search"]:hover + .form-search-icon {
+	fill: rgb(255, 255, 255, 1);
+}
 input[type="search"]:focus {
 	color:#000;  
 	background:#fff;
 }
 input[type="search"]:focus + .form-search-icon {
 	fill:red;
-}
-input[type="search"]:hover + .form-search-icon {
-	background: #212a3a;
-	fill: rgb(255, 255, 255, 1);
 }
 .bookmark {
 	font-size: 17px;
@@ -224,8 +223,10 @@ input[type="search"]:hover + .form-search-icon {
 	fill: #c5c5c5;
 	position: absolute;
 }
-.login-icon:hover, .login:hover {
+.login:hover .login-icon {
 	fill: #32425c;
+}
+.login:hover {
 	color: #ee3643;
 }
 .registration {
@@ -283,7 +284,13 @@ input[type="search"]:hover + .form-search-icon {
 .user-icon, .icon-logout {
 	fill: #c5c5c5;
 }
-.user-icon:hover, .icon-logout:hover {
+.user:hover .user-icon {
+	fill: #32425c;
+}
+.user:hover {
+	color: #32425c;
+}
+.icon-logout:hover {
 	fill: #32425c;
 }
 .user:active, .exit:active {
@@ -745,6 +752,7 @@ input[type="search"]:hover + .form-search-icon {
 /*Блок с услугами*/
 .box-service {
 	background-color: #f2f6f8;
+	min-height: 530px;
 }
 .section-service {
 	display: none;
@@ -1153,7 +1161,7 @@ input[type="search"]:hover + .form-search-icon {
 	flex-wrap: wrap;
 }
 .left-aside {
-	width: 200px;
+	/*width: 200px;*/
 }
 .filter {
 	display: flex;
@@ -1217,7 +1225,7 @@ input[type="search"]:hover + .form-search-icon {
     display: flex;
 }
 .price-min, .price-max {
-	width: 85px;
+	width: 90px;
     padding: 8px 2px 10px 8px;
     font-weight: 400;
     font-style: normal;
@@ -1228,6 +1236,10 @@ input[type="search"]:hover + .form-search-icon {
     background-color: #f7f3ec;
     border: none;
     border-radius: 3px;
+}
+.ndash {
+	padding: 0 6px;
+    line-height: 30px;
 }
 .manufacturers {
 	border-top: 1px solid #e5e5e5;
@@ -1526,16 +1538,24 @@ input[type="search"]:hover + .form-search-icon {
 	display: block;
 	animation: bounce 0.6s;
 }
-.modal-error {
-  animation: shake 0.6s;
-}
 .close {
 	position: absolute;
     top: 7px;
     right: 22px;
     cursor: pointer;
-    border: 0;
-    background-color: #fff;
+	background: transparent;
+	border: 0;
+	border-radius: 0;
+	color: inherit;
+	display: inline-block;
+	font: inherit;
+	height: auto;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	text-decoration: none;
+	user-select: none;
 }
 .close:before {
 	content: "";
@@ -1638,7 +1658,20 @@ input[type="search"]:hover + .form-search-icon {
     right: 39px;
     cursor: pointer;
     border: 0;
-    background: #f7f3ec;
+    cursor: pointer;
+	background: transparent;
+	border: 0;
+	border-radius: 0;
+	color: inherit;
+	display: inline-block;
+	font: inherit;
+	height: auto;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	text-decoration: none;
+	user-select: none;
 }
 .close-map:before {
 	content: "";
@@ -1736,4 +1769,7 @@ input[type="search"]:hover + .form-search-icon {
   80% {
     transform: translateX(10px);
   }
+}
+.modal-error {
+  animation: shake 0.6s;
 }
