@@ -4,6 +4,7 @@ var close = popup.querySelector(".close");
 var login = popup.querySelector("[name=fio]");
 var form = popup.querySelector(".callback-form");
 var password = popup.querySelector("[name=e-mail]");
+
   
   link.addEventListener("click", function (event) {
     event.preventDefault();
@@ -28,7 +29,6 @@ var password = popup.querySelector("[name=e-mail]");
     }
   });
 
-
   
   window.addEventListener("keydown", function (event) {
     if (event.keyCode === 27) {
@@ -36,6 +36,32 @@ var password = popup.querySelector("[name=e-mail]");
       if (popup.classList.contains("content-show")) {
         popup.classList.remove("content-show");
         popup.classList.remove("modal-error");
+      }
+    }
+  });
+
+
+var maplink = document.querySelector(".map-popup");
+var popupmap = document.querySelector(".big-map");
+var mapclose = popupmap.querySelector(".close-map");
+
+  maplink.addEventListener("click", function (event) {
+    event.preventDefault();
+    popupmap.classList.add("show-map");
+  });
+   
+  
+  mapclose.addEventListener("click", function (event) {
+    event.preventDefault();
+    popupmap.classList.remove("show-map");
+  });
+  
+  
+  window.addEventListener("keydown", function (event) {
+    if (event.keyCode === 27) {
+      event.preventDefault();
+      if (popupmap.classList.contains("show-map")) {
+        popupmap.classList.remove("show-map");
       }
     }
   });
