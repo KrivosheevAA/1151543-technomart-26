@@ -207,6 +207,7 @@ input[type="search"]:focus + .form-search-icon {
     line-height: 18px;
     padding-left: 9px;
     margin-bottom: 40px;
+    font-family: "Cuprum","Arial",sans-serif;
 }
 .login {
     background-color: #fff;
@@ -298,8 +299,9 @@ input[type="search"]:focus + .form-search-icon {
 	font-size: 16px;
 	text-decoration: underline;
 	color: #32425c;
-	 padding: 0px 32px 0 19px;
+	padding: 0px 32px 0 19px;
 	position: relative;
+    font-family: "Cuprum","Arial",sans-serif;
 }
 .my-order:after {
 	position: absolute;
@@ -315,6 +317,7 @@ input[type="search"]:focus + .form-search-icon {
 	font-size: 16px;
 	text-decoration: underline;
 	color: #32425c;
+    font-family: "Cuprum","Arial",sans-serif;
 }
 .my-order:hover, .personal:hover {
 	color: #ee3643;
@@ -577,7 +580,6 @@ input[type="search"]:focus + .form-search-icon {
 	font-size: 16px;
 	line-height: 20px;
 	font-family: "PT Sans","Arial",sans-serif;
-	text-transform: uppercase;
 	font-weight: bold;
 	margin: auto 25px;
 }
@@ -809,6 +811,8 @@ input[type="search"]:focus + .form-search-icon {
     border-top: 1px solid #405069;
     background-color: #32425c;
     color: #fff;
+    font-family: "Cuprum","Arial",sans-serif;
+    font-weight: bold;
 }
 .box-service-container ul {
 	list-style: none;
@@ -870,7 +874,8 @@ input[type="search"]:focus + .form-search-icon {
 	font-size: 30px;
   	font-family: "Cuprum","Arial",sans-serif;
   	text-transform: uppercase;
-  	line-height: 1;
+  	line-height: 24px;
+    font-weight: normal;
 }
 .box-service p, .information-about p, .information-contact p {
 	font-size: 13px;
@@ -911,6 +916,7 @@ input[type="search"]:focus + .form-search-icon {
 .information-about .btn-red {
 	margin-top: 24px;
     width: 220px;
+    font-family: "Cuprum","Arial",sans-serif;
 }
 .information-contact {
 	width: 300px;
@@ -920,6 +926,7 @@ input[type="search"]:focus + .form-search-icon {
 	width: 300px;
     margin-top: 32px;
     margin-left: auto;
+    font-family: "Cuprum","Arial",sans-serif;
 }
 .information-contact p {
     width: 190px;
@@ -1146,6 +1153,8 @@ input[type="search"]:focus + .form-search-icon {
     font-family: "PT Sans","Arial",sans-serif;
     font-weight: normal;
     color: #000;
+    font-size: 13px;
+    line-height: 24px;
 }
 .title-price {
 	color: #000;
@@ -1332,6 +1341,8 @@ input[type="search"]:focus + .form-search-icon {
     font-family: "PT Sans","Arial",sans-serif;
     font-weight: normal;
     color: #000;
+    font-size: 13px;
+    line-height: 24px;
 }
 .sort-list {
 	display: flex;
