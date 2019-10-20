@@ -158,12 +158,13 @@ input[type="search"]:focus + .form-search-icon {
 	padding: 47px 0 60px 0;
 }
 .header-center h1 {
- 	font-size: 16px;
+ 	font-size: 15px;
   	font-family: "Cuprum","Arial",sans-serif;
   	color: #ee3643;
   	width: 204px;
     line-height: 23px;
     padding: 0px 0px 0px 51px;
+    font-style: italic;
 }
 .header-contact {
 	width: 270px;
@@ -573,7 +574,7 @@ input[type="search"]:focus + .form-search-icon {
 }
 .goods-title {
 	color: #000;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 20px;
 	font-family: "PT Sans","Arial",sans-serif;
 	text-transform: uppercase;
@@ -1003,25 +1004,11 @@ input[type="search"]:focus + .form-search-icon {
     padding: 0;
     list-style: none;
 }
-.vk {
-	background: #212a3a url(../img/icon-vk.svg) no-repeat;
-	display: block;
-	width: 41px;
-	height: 41px;
-	border-radius: 50%;
-	background-position: 50% 50%;
-}
-.fb {
-	background: #212a3a url(../img/icon-fb.svg) no-repeat;
-	display: block;
-	width: 41px;
-	height: 41px;
-	border-radius: 50%;
-	background-position: 50% 50%;
-}
-.inst {
-	background: #212a3a url(../img/icon-insta.svg) no-repeat;
-	display: block;
+.vk, .fb, .inst {
+	background-color: #212a3a;
+	display: flex;
+	align-items: center;
+    justify-content: center;
 	width: 41px;
 	height: 41px;
 	border-radius: 50%;
