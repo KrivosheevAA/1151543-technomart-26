@@ -192,7 +192,7 @@ input[type="search"]:focus + .form-search-icon {
     line-height: 18px;
     position: relative;
     border: 3px solid #fff;
-    padding: 10px 50px 10px 72px;
+    padding: 10px 50px 10px 66px;
     margin: 0px;
     width: 145px;
 }
@@ -215,7 +215,7 @@ input[type="search"]:focus + .form-search-icon {
     line-height: 24px;
     font-size: 14px;
     font-style: normal;
-    padding: 4px 0 0 10px;
+    padding: 4px 0 0 7px;
     margin: 0px;
 }
 .profile {
@@ -262,11 +262,14 @@ input[type="search"]:focus + .form-search-icon {
     opacity: 0.3;
 }
 .accaunt {
-    margin-top: 14px;
+    /*margin-top: 14px;*/
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
 }
 .user-info {
-    margin-top: -12px;
-    margin-bottom: 8px;
+    /*margin-top: -12px;
+    margin-bottom: 8px;*/
 }
 .user {
     position: relative;
@@ -291,7 +294,7 @@ input[type="search"]:focus + .form-search-icon {
     height: 18px;
     position: absolute;
     top: calc(50% - 18px / 2);
-    left: 10px;
+    left: 15px;
 }
 .exit {
     position: relative;
@@ -372,7 +375,7 @@ input[type="search"]:focus + .form-search-icon {
     margin: 0px;
 }
 .nav li {
-    padding: 17px 30px 17px;
+    padding: 18px 30px 18px;
 }
 .nav a {
     color: #fff;
@@ -1262,11 +1265,11 @@ input[type="search"]:focus + .form-search-icon {
     color: #ee3643;
 }
 .breadcrumbs {
-    padding: 25px 0;
+    padding: 18px 0;
 }
 .breadcrumbs a {
     color: #000;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 24px;
     font-family: "PT Sans","Arial",sans-serif;
     text-transform: uppercase;
@@ -1296,7 +1299,7 @@ input[type="search"]:focus + .form-search-icon {
     height: 25px;
     display: block;
     top: -7px;
-    left: -13px;
+    left: -16px;
 }
 .icon-home:after {
     content: "";
@@ -1329,7 +1332,7 @@ input[type="search"]:focus + .form-search-icon {
     height: 12px;
     display: block;
     top: 6px;
-    left: 105px;
+    left: 100px;
 }
 .hammer-drill {
     font-size: 30px;
@@ -1377,6 +1380,7 @@ input[type="search"]:focus + .form-search-icon {
     color: #000;
     font-size: 13px;
     line-height: 24px;
+    margin-bottom: 0px;
 }
 .title-price {
     color: #000;
@@ -1384,6 +1388,9 @@ input[type="search"]:focus + .form-search-icon {
     font-family: "PT Sans","Arial",sans-serif;
     text-transform: uppercase;
     font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 14px;
+    line-height: 30px;
 }
 .range {
     margin-bottom: 23px;
@@ -1429,8 +1436,6 @@ input[type="search"]:focus + .form-search-icon {
     display: flex;
 }
 .price-min, .price-max {
-    width: 90px;
-    padding: 8px 2px 10px 8px;
     font-weight: 400;
     font-style: normal;
     font-size: 17px;
@@ -1439,11 +1444,15 @@ input[type="search"]:focus + .form-search-icon {
     text-align: center;
     background-color: #f7f3ec;
     border: none;
-    border-radius: 3px;
-}
+    border-radius: 5px;
+    width: 85px;
+    padding: 0px 2px 0px 8px;
+    height: 38px;
+}  
 .ndash {
-    padding: 0 6px;
-    line-height: 30px;
+    padding: 0 10px;
+    line-height: 35px;
+    font-size: 17px;
 }
 .manufacturers {
     border-top: 1px solid #e5e5e5;
@@ -1587,7 +1596,7 @@ input[type="search"]:focus + .form-search-icon {
     font-family: "PT Sans","Arial",sans-serif;
     font-weight: normal;
     color: #000;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 24px;
 }
 .sort-list {
@@ -1599,7 +1608,7 @@ input[type="search"]:focus + .form-search-icon {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-left: 90px;
+    margin-left: 50px;
 }
 .sort-list a {
     color: #acaaa5;
