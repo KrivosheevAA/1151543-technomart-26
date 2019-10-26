@@ -994,7 +994,7 @@ input[type="search"]:focus + .form-search-icon {
     display: flex;
     position: relative;
     margin: 70px 0 54px 0;
-    padding-bottom: 86px;
+    padding-bottom: 99px;
 }
 .box-service-wrapper:after{
     position: absolute;
@@ -1031,7 +1031,7 @@ input[type="search"]:focus + .form-search-icon {
 }
 .information-about {
     width: 540px;
-    margin: 52px 0 84px 0;
+    margin-bottom: 83px;
 }
 .information-about h2, .information-contact h2 {
     font-size: 30px;
@@ -1039,7 +1039,7 @@ input[type="search"]:focus + .form-search-icon {
     text-transform: uppercase;
     line-height: 24px;
     font-weight: normal;
-    margin: 29px 0 29px 0;
+    margin: 28px 0 28px 0;
 }
 .information-about p {
     font-size: 13px;
@@ -1081,7 +1081,6 @@ input[type="search"]:focus + .form-search-icon {
 }
 .information-contact {
     width: 300px;
-    margin: 52px 0 84px 0;
 }
 .information-contact p {
      font-size: 13px;
@@ -1127,7 +1126,7 @@ input[type="search"]:focus + .form-search-icon {
     font-size: 18px;
     line-height: 24px;
     color: #f1f5f7;
-    margin: 34px 0 50px 3px;
+    margin: 34px 0 49px 3px;
 }
 .left-contact a {
     color: #fff;
@@ -1196,6 +1195,7 @@ input[type="search"]:focus + .form-search-icon {
     line-height: 18px;
     color: #fff;
     width: 240px;
+    padding-top: 3px;
 }
 .socials {
     margin: 0 100px 0 135px;
@@ -1229,11 +1229,23 @@ input[type="search"]:focus + .form-search-icon {
     border-radius: 50%;
     background-position: 50% 50%;
 }
+.vk img {
+    width: 26px;
+    height: 15px;
+}
+.fb img {
+    width: 12px;
+    height: 22px;
+}
+.inst img {
+    width: 21px;
+    height: 21px;
+}
 .vk:hover, .fb:hover, .inst:hover {
     background-color: #ee3643;
 }
 .communication {
-    margin: 14px 9px 0 0;
+    margin: 12px 9px 0 0;
     display: flex;
     justify-content: space-between;
 }
@@ -1707,7 +1719,7 @@ input[type="search"]:focus + .form-search-icon {
     display: flex;
     width: 285px;
     list-style: none;
-    margin: 10px 0 29px 0;
+    margin: 10px 0 33px 0;
     padding: 0;
 }
 .pagination-list a {
@@ -1778,7 +1790,7 @@ input[type="search"]:focus + .form-search-icon {
     min-height: 430px;
     position: fixed;
     -webkit-box-shadow: 0 5px 25px #000;
-            box-shadow: 0 5px 25px #000;
+     box-shadow: 0 5px 25px #000;
     border-top: 7px solid #ee3643;
     left: 30%;
     top: 30%;
@@ -1801,7 +1813,6 @@ input[type="search"]:focus + .form-search-icon {
     border: 0;
     border-radius: 0;
     color: inherit;
-    display: inline-block;
     font: inherit;
     height: auto;
     line-height: 1;
@@ -1933,7 +1944,6 @@ input[type="search"]:focus + .form-search-icon {
     border: 0;
     border-radius: 0;
     color: inherit;
-    display: inline-block;
     font: inherit;
     height: auto;
     line-height: 1;
