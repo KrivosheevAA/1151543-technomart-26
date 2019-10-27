@@ -54,7 +54,7 @@ img {
     -webkit-box-shadow: 0 5px 0 0 #b52933;
     box-shadow: 0 5px 0 0 #b52933;
     padding: 10px 0 8px 0;
-    text-align: center;
+    text-align: center;     
 }
 .logo:hover {
     background-color: #ca2c37;
@@ -88,19 +88,19 @@ input[type="search"]::placeholder {
 }
 .form-search-icon {
     position: absolute;
-    fill: rgb(255, 255, 255, 0.3);
+    fill: rgba(255, 255, 255, 0.3);
     left: 18px;
     top: 0px;
 }
 input[type="search"]:hover + .form-search-icon {
-    fill: rgb(255, 255, 255, 1);
+    fill: rgba(255, 255, 255, 1);
 }
 input[type="search"]:focus {
     color:#000;  
     background:#fff;
 }
 input[type="search"]:focus + .form-search-icon {
-    fill:red;
+    fill: rgba(255, 0, 0, 1);
 }
 .bookmark {
     font-size: 17px;
@@ -144,7 +144,7 @@ input[type="search"]:focus + .form-search-icon {
 .basket:hover:before {
     opacity: 1;
 }
-.added-basket {
+.added {
     background: #ee3643;
 }
 .order {
@@ -1327,33 +1327,27 @@ input[type="search"]:focus + .form-search-icon {
         -ms-flex-align: center;
             align-items: center;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+        justify-content: space-between;
     width: 373px;
 }
-.icon-home {
+.home {
     position: relative;
+    left: 0px;
+    top: 1px;
+    width: 15px;
+    height: 12px;
 }
-.icon-home:before {
-    content: "";
-    position: absolute;
-    background: url(../img/icon-home.svg) no-repeat;
-    width: 25px;
-    height: 25px;
-    display: block;
-    top: -7px;
-    left: -16px;
-}
-.icon-home:after {
+.breadcrumbs-icon-0:after {
     content: "";
     position: absolute;
     background: url(../img/icon-right-small.svg) no-repeat;
     width: 8px;
     height: 12px;
     display: block;
-    top: -6px;
-    left: 14px;
+    top: 6px;
+    left: 30px;
 }
-.breadcrumbs-icon-1, .breadcrumbs-icon-2 {
+.breadcrumbs-icon-1, .breadcrumbs-icon-2, .breadcrumbs-icon-0 {
     position: relative;
 }
 .breadcrumbs-icon-1:after {
@@ -1374,7 +1368,7 @@ input[type="search"]:focus + .form-search-icon {
     height: 12px;
     display: block;
     top: 6px;
-    left: 100px;
+    left: 98px;
 }
 .hammer-drill {
     font-size: 30px;
@@ -1536,26 +1530,39 @@ input[type="search"]:focus + .form-search-icon {
 }
 .form-checkbox + .form-label:before {
     content: "";
-    width: 23px;
-    height: 23px;
-    display: block;
-    background: url(../img/checkbox-off.svg) no-repeat;
     position: absolute;
-    top: -3px;
+    top: -4px;
     left: -32px;
+    width: 19px;
+    height: 19px;
+    border: 2px solid #c5c5c5;
+    border-radius: 3px;
 }
 .form-checkbox:checked + .form-label:after {
     content: "";
-    width: 27px;
-    height: 23px;
-    display: block;
-    background: url(../img/checkbox-on.svg) no-repeat;
     position: absolute;
-    top: -3px;
-    left: -32px;
+    top: 6px;
+    left: -17px;
+    width: 11px;
+    height: 3px;
+    border: 4px solid #c5c5c5;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    transform: translate(-50%, -75%) rotate(-45deg);
 }
-.form-label:hover::before, .form-label:hover::after {
-    opacity: 0.5;
+.form-label:hover::before {
+   border-color: #b5b5b5;
+}
+.form-checkbox:checked + .form-label:hover::after {
+  border-color: #b5b5b5;
+  border-top-color: transparent;
+  border-right-color: transparent;
+}
+.form-checkbox:disabled + .form-label:before {
+    opacity: 0.4;
+}
+.form-checkbox:disabled + .form-label:after {
+    opacity: 0.4;
 }
 .power h3 {
     color: #000;
@@ -1593,25 +1600,35 @@ input[type="search"]:focus + .form-search-icon {
 .form-checkbox + .power-label:before {
     content: "";
     position: absolute;
-    top: -3px;
+    top: -4px;
     left: -32px;
-    width: 17px;
-    height: 17px;
+    width: 16px;
+    height: 16px;
     border: 4px solid #c5c5c5;
     border-radius: 50%;
 }
 .form-checkbox:checked + .power-label:after {
     content: "";
     position: absolute;
-    left: -24px;
-    top: 5px;
-    width: 9px;
-    height: 9px;
+    top: 8px;
+    left: -20px;
+    transform: translate(-55%, -55%);
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background-color: #c5c5c5;
 }
-.power-label:hover::before, .power-label:hover::after {
-    opacity: 0.5;
+.power-label:hover::before {
+   border-color: #b5b5b5;
+}
+.form-checkbox:checked + .power-label:hover::after {
+  background-color: #b5b5b5;
+}
+.form-checkbox:disabled + .power-label:before {
+    opacity: 0.4;
+}
+.form-checkbox:disabled + .power-label:after {
+    opacity: 0.4;
 }
 .btn-filter {
     width: 138px;
@@ -1944,10 +1961,10 @@ input[type="search"]:focus + .form-search-icon {
     text-transform: uppercase;
     background-color: #ee3643;
 }
-.callback-form input[type="text"]:hover, .callback-form textarea:hover {
-    border-color: #b5b5b5;
+.form-group input[type="text"]:hover, .form-group textarea:hover {
+    border: 2px solid #b5b5b5;
 }
-.callback-form input[type="text"]:focus, .callback-form textarea:focus {
+.form-group input[type="text"]:focus, .form-group textarea:focus {
    border-color: #ee3643;
 }
 .big-map {
