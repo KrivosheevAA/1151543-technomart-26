@@ -1077,6 +1077,9 @@
      font-family: "PT Sans","Arial",sans-serif;
      color: #000;
 }
+ .shopping {
+     width: 545px;
+}
  .transfer {
      width: 430px;
      padding-top: 12px;
